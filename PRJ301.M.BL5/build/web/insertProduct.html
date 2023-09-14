@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+      
+       <form action="ProductController" method="post">
+           <input type="hidden" name="service" value="insertProduct">
+        <table>
+            <tr>
+                <td><label for="pid">ProductID</label></td>
+                <td><input type="text" name="pid" id="pid"></td>
+            </tr>
+            <tr>
+                <td><label for="pname">Product Name</label></td>
+                <td><input type="text" name="pname" id="pname"></td>
+            </tr>
+            <tr>
+                <td><label for="model">Model year</label></td>
+                <td><input type="text" name="model" id="model"></td>
+            </tr>
+            <tr>
+                <td><label for="price">Price</label></td>
+                <td><input type="number" name="price" id="price"></td>
+            </tr>
+            <tr>
+                <td><label for="brand">Brand Name</label></td>
+                <td><select name="brand" id="brand">
+                        <option value="Trek">Trek</option>
+                        <option value="Ritchey">Ritchey</option>
+                        <option value="Surly">Surly</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Category">Category</label></td>
+                <td><select name="Category" id="Category">
+                        <option value="Mountain Bikes">Mountain Bikes</option>
+                        <option value="Electric Bikes">Electric Bikes</option>
+                        <option value="Cyclocross Bicycles">Cyclocross Bicycles</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="submit" value="Insert Product"></td>
+                <td><input type="reset" value="reset"></td>
+            </tr>
+        </table>
+   </form>
+    </body>
+</html>
